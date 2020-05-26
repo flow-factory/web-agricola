@@ -1,21 +1,14 @@
-<mat-toolbar color="primary">
-  <span>Web Agricola</span>
-
-  <!-- This fills the remaining space of the current row -->
-  <span class="example-fill-remaining-space"></span>
-
-  <span>Right Aligned Text</span>
-</mat-toolbar>
+<app-header *ngIf="isSigned"></app-header>
 <mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened>
-    Menu Side
-    <ul class="menu-items">
-      <li>Gola</li>
-      <li>Mundo</li>
-    </ul>
+  <mat-drawer mode="side" opened *ngIf="isSigned">
+    <mat-action-list>
+      <a mat-list-item routerLink="home">Home</a>
+      <a mat-list-item>Forms</a>
+      <a mat-list-item>Help</a>
+      <button mat-list-item routerLink="404">Dev Tools</button>
+    </mat-action-list>
   </mat-drawer>
   <mat-drawer-content>
-    # Main content
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>

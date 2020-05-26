@@ -1,0 +1,29 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+  
+.example-full-width {
+    width: 100%;
+}
+
+.signin-container {
+    float: right;
+}
+
+section {
+    display: table;
+    margin: 8px;
+    width: 95%;
+}
+
+.example-button-row {
+    width: 100%;
+    display: table-cell;
+}
+  
+.example-button-row button {
+    display: table-cell;
+    width: 90%;
+}

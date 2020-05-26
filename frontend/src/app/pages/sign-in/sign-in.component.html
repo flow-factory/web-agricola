@@ -1,0 +1,28 @@
+<div class="main-content">
+  <div>
+    <h1>Sign In</h1>
+  </div>
+  <div class="signin-container">
+    <p>Credentials</p>
+    <div class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" placeholder="Write your email" [formControl]="userName" required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Write your password" [formControl]="password" required>
+      </mat-form-field>
+      <section>
+        <div class="example-button-row">
+          <button mat-raised-button color="primary" (click)="signIn()">Acceder</button>
+        </div>
+      </section>
+      <section>
+        <div class="example-button-row">
+          <button mat-raised-button color="accent">Accent</button>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
